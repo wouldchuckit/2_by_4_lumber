@@ -1,13 +1,105 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-4",
-    "name": "2_by_4_lumber",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-4",
+  "name": "2_by_4_lumber",
+  "ioValues": [
+    {
+      "name": "2by4Length",
+      "ioValue": 2438,
+      "currentEquation": "2438"
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-5"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.1844660194174757,
+      "y": 0.11316397228637413,
+      "uniqueID": "id-7",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 38
+        },
+        {
+          "name": "y length",
+          "ioValue": 89
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.01815,
+      "y": 0.21247113163972287,
+      "uniqueID": "id-11",
+      "name": "2by4Length",
+      "type": "number"
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.3149946062567422,
+      "y": 0.22170900692840645,
+      "uniqueID": "id-14",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 2438
+        }
+      ]
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.10517799352750809,
+      "y": 0.3302540415704388,
+      "uniqueID": "id-18",
+      "name": "2by4width",
+      "value": 38
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.0965480043149946,
+      "y": 0.5103926096997691,
+      "uniqueID": "id-20",
+      "name": "2by4height",
+      "value": 89
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-7",
+      "ap2ID": "id-14"
+    },
+    {
+      "ap2Name": "height",
+      "ap1ID": "id-11",
+      "ap2ID": "id-14"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-14",
+      "ap2ID": "id-5"
+    },
+    {
+      "ap2Name": "x length",
+      "ap1ID": "id-18",
+      "ap2ID": "id-7"
+    },
+    {
+      "ap2Name": "y length",
+      "ap1ID": "id-20",
+      "ap2ID": "id-7"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
